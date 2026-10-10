@@ -7,21 +7,21 @@
 [![Tests](https://img.shields.io/badge/Tests-Passing-success.svg?logo=pytest&logoColor=white)](tests/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-An enterprise-grade **Business Intelligence & Financial Analytics Platform** engineered in Python and Streamlit. Designed specifically for **BI Analysts, Corporate Strategy Executives, and Operations Leaders**, this application transforms raw retail transactions into actionable decision intelligence, profit diagnostics, customer segmentation, and predictive sensitivity modeling.
+An enterprise-grade **Business Intelligence & Financial Analytics Platform** engineered in Python and Streamlit. Designed specifically for **BI Analysts, Corporate Strategy Executives, and Operations Leaders** seeking a unified view of revenue performance, profitability, customer economics, and operational efficiency.
 
 ---
 
 ## 🌟 Executive Highlights & BI Capabilities
 
 ### 1. 📊 Executive Performance Dashboard
-- **North Star Financial Metrics**: Live tracking of **Total Revenue**, **Net Profit**, **Gross Margin %**, **Total Order Count**, **Average Order Value (AOV)**, and **Discount Exposure**.
+- **North Star Financial Metrics**: Live tracking of **Total Revenue**, **Net Profit**, **Gross Margin %**, **Total Order Count**, and **Average Order Value (AOV)**.
 - **Period-over-Period (YoY) Deltas**: Automated baseline variance analysis tracking revenue momentum, margin basis point fluctuations, and order frequency changes.
 - **Dynamic Executive Alerts**: Automated rule-based alerts flagging loss-making sub-categories and margin dilution in real time.
 
 ### 2. 📈 Sales & Financial Diagnostics
 - **Time-Series Decomposition**: Configurable monthly and quarterly trend trajectories with a 3-period moving average smoothing line.
 - **Fiscal Seasonality Heatmap**: Year-over-month comparative matrix identifying cyclical demand spikes and Q4 holiday surges.
-- **Discount Elasticity & Cliff Analysis**: Deep diagnostic pinpointing the threshold where discounting turns margin-dilutive (empirically identifying negative margins on promotions exceeding 20%).
+- **Discount Elasticity & Cliff Analysis**: Deep diagnostic pinpointing the threshold where discounting turns margin-dilutive.
 - **Cumulative Annual Run-Rate Curves**: Fiscal-year pacing curves comparing daily sales velocity across operating years.
 
 ### 3. 📦 Strategic Product Portfolio Intelligence
@@ -30,23 +30,22 @@ An enterprise-grade **Business Intelligence & Financial Analytics Platform** eng
   - **🐄 Cash Cows**: High Sales Volume & Stable/Lower Margin.
   - **🚀 Opportunities**: Emerging lines with High Margin but Low Volume.
   - **⚠️ Underperformers**: Margin-dilutive lines requiring SKU rationalization.
-- **Pareto (80/20) Revenue Concentration**: Identifies the exact percentage and count of SKUs that drive 80% of aggregate revenue, surfacing revenue risk and catalog dependencies.
+- **Pareto (80/20) Revenue Concentration**: Identifies the exact percentage and count of SKUs that drive 80% of aggregate revenue.
 - **SKU Profit Extremes**: Side-by-side executive ledgers ranking the **Top 10 Value Creators** vs. **Top 10 Profit Drains**.
 
 ### 4. 👥 Customer Intelligence & RFM Segmentation
-- **Recency, Frequency, Monetary (RFM) Valuation**: Algorithmic segmentation categorizing customers into behavioral cohorts:
-  - *Champions*, *Loyal Customers*, *Potential Loyalists*, *New Accounts*, *At Risk*, *Needs Attention*, and *Hibernating*.
+- **Recency, Frequency, Monetary (RFM) Valuation**: Algorithmic segmentation categorizing customers into behavioral cohorts.
 - **Interactive RFM Treemap**: Visualizes customer cohorts sized by gross sales and colored by net profit contribution.
 - **Strategic CRM Playbook**: Action-oriented retention protocols, upsell triggers, and loyalty incentive strategies per cohort.
 - **Strategic Account Ledger**: Tracks top enterprise accounts by lifetime spend, order frequency, and average basket size.
 
 ### 5. 🚚 Logistics, Supply Chain & Geographic Heatmap
 - **Interactive US Choropleth Map**: State-level penetration map switchable between Sales Volume, Net Profit, and Profit Margin %.
-- **Fulfillment Lead Time (Order-to-Ship SLA)**: Lead time boxplots and median delivery speeds by shipping carrier tier (*Same Day*, *First Class*, *Second Class*, *Standard Class*).
+- **Fulfillment Lead Time (Order-to-Ship SLA)**: Lead time boxplots and median delivery speeds by shipping carrier tier.
 - **Territory Margin Analysis**: Regional performance breakdowns highlighting operational variance between West, East, Central, and South operating hubs.
 
 ### 6. 🔮 Executive What-If Scenario Planner
-- **Real-Time Financial Simulator**: Empowers leadership to test strategic pricing and cost assumptions:
+- **Real-Time Financial Simulator**: Empowers leadership to test strategic pricing and cost assumptions.
   - **Price Elasticity Slider** (-20% to +20%)
   - **Discount Policy Discipline** (-50% to +50%)
   - **Demand Volume Fluctuation** (-30% to +50%)
@@ -63,7 +62,7 @@ An enterprise-grade **Business Intelligence & Financial Analytics Platform** eng
 
 ## 🏗️ Repository Architecture
 
-```
+```text
 Superstore-Sales-Dashboard-with-Streamlit-main/
 │
 ├── app.py                     # Main Streamlit application entry point & layout orchestrator
@@ -159,8 +158,8 @@ pytest tests/ -v
 ```
 
 ### Verified Test Cases:
-- **`TestDataLoader`**: Validates file path resolution, column standardization, multi-format datetime parsing (`dayfirst=True`), feature derivations (`ship_days`, `profit_margin`, `cogs`), and quantile/percentile RFM scoring.
-- **`TestMetrics`**: Validates executive KPI aggregation, Period-over-Period variance deltas, Pareto 80/20 cumulative sum math, and BCG median-split classification.
+- **`TestDataLoader`**: Validates file path resolution, column standardization, multi-format datetime parsing (`dayfirst=True`), feature derivations, and quantile-based customer scoring.
+- **`TestMetrics`**: Validates executive KPI aggregation, period-over-period variance deltas, Pareto 80/20 cumulative sum math, and BCG median-split classification.
 - **`TestScenario`**: Validates zero-baseline fidelity, price sensitivity accretion, discount policy elasticity, and cost inflation margin erosion.
 
 ---
@@ -183,12 +182,10 @@ pytest tests/ -v
 ## 💼 Built for BI & Analytics Professionals
 
 - **Modular & Maintainable**: Separated into dedicated data ingestion, analytical metric, visualization, and view layers.
-- **Performance Optimized**: Streamlit caching (`@st.cache_data`) minimizes redundant computations across filter adjustments.
+- **Performance Optimized**: Streamlit caching minimizes redundant computations across filter adjustments.
 - **Executive UI/UX**: Professional navy and slate styling, interactive Plotly visualizations with currency formatting, hover details, and responsive layout.
 
 ---
 
 ## 📄 License
 This project is open-source under the [MIT License](LICENSE).
-#   s t o r e - B I - p l a t f o r m  
- 
