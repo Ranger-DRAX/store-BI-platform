@@ -1,0 +1,21 @@
+[theme]
+# Primary accent color for interactive elements (Royal Blue)
+primaryColor = "#2563EB"
+
+# Background color for the main content area (Slate 50)
+backgroundColor = "#F8FAFC"
+
+# Background color used for the sidebar and card widgets
+secondaryBackgroundColor = "#FFFFFF"
+
+# Color used for text (Slate 900)
+textColor = "#0F172A"
+
+# Font family
+font = "sans serif"
+
+[server]
+headless = true
+enableCORS = false
+enableXsrfProtection = true
+maxUploadSize = 50
